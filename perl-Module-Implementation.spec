@@ -8,12 +8,12 @@
 Summary:	Module::Implementation - loads one of several alternate underlying implementations for a module
 Summary(pl.UTF-8):	Module::Implementation - wczytywanie jednej z kilku alternatywnych implementacji modułu
 Name:		perl-Module-Implementation
-Version:	0.06
+Version:	0.09
 Release:	1
 License:	Artistic v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	748f3540162fc52222d761fab3efb266
+# Source0-md5:	52e3fe0ca6b1eff0488d59b7aacc0667
 URL:		http://search.cpan.org/dist/Module-Implementation/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -21,7 +21,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Module-Runtime >= 0.012
 BuildRequires:	perl-Try-Tiny
-BuildRequires:	perl-Test-Fatal
+BuildRequires:	perl-Test-Fatal >= 0.006
 BuildRequires:	perl-Test-Requires
 BuildRequires:	perl-Test-Simple >= 0.88
 %endif
@@ -71,6 +71,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes
 %{perl_vendorlib}/Module/Implementation.pm
 %{_mandir}/man3/Module::Implementation.3pm*
