@@ -4,7 +4,6 @@
 #
 %define		pdir	Module
 %define		pnam	Implementation
-%include	/usr/lib/rpm/macros.perl
 Summary:	Module::Implementation - loads one of several alternate underlying implementations for a module
 Summary(pl.UTF-8):	Module::Implementation - wczytywanie jednej z kilku alternatywnych implementacji modułu
 Name:		perl-Module-Implementation
