@@ -13,10 +13,11 @@ License:	Artistic v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	52e3fe0ca6b1eff0488d59b7aacc0667
-URL:		http://search.cpan.org/dist/Module-Implementation/
+URL:		https://metacpan.org/release/Module-Implementation
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Module-Runtime >= 0.012
 BuildRequires:	perl-Try-Tiny
