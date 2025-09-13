@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Module
 %define		pnam	Implementation
@@ -11,9 +11,9 @@ Version:	0.09
 Release:	1
 License:	Artistic v2
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	52e3fe0ca6b1eff0488d59b7aacc0667
-URL:		https://metacpan.org/release/Module-Implementation
+URL:		https://metacpan.org/dist/Module-Implementation
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
